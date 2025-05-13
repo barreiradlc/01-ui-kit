@@ -18,7 +18,7 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   return (
-    <button className={`px-4 py-2 rounded ${styles[variant]}`} {...props}>
+    <button className={`my-4 py-4 rounded ${styles[variant]}`} {...props}>
       {children}
     </button>
   );

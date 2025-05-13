@@ -2,10 +2,10 @@ import { AiImage, Button, Input } from 'curiosity-ui';
 
 function App() {
   return (
-    <div>
+    <div className='flex flex-col p-6 '>
       <Input placeholder="Type something..." />
-      <Button variant="danger">Delete</Button>
-      <AiImage prompt="Cute cat" />
+      <Button variant="danger">Remove</Button>
+      <AiImage prompt="Hedgehog" />
     </div>
   );
 }

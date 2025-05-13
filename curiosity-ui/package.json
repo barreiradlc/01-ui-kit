@@ -1,25 +1,21 @@
 {
   "name": "curiosity-ui",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
-  "peerDependencies": {
-    "react": "^17 || ^18"
-  },
+  "files": [
+    "dist"
+  ],
+
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "watch": "tsc --watch",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "tsc",
+    "watch": "tsc --watch"
   },
   "dependencies": {
     "@runware/sdk-js": "^1.1.38",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "@tailwindcss/vite": "^4.1.6",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

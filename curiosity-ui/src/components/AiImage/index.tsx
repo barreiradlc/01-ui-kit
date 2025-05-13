@@ -18,7 +18,7 @@ async function generateFromText(prompt: string) {
   return image.imageURL
 }
 
-interface AiImageProps {
+interface AiImageProps extends React.ImgHTMLAttributes<HTMLImageElement>{
   prompt: string;
 }
 
@@ -43,7 +43,7 @@ const AiImage: React.FC<AiImageProps> = ({ prompt }) => {
     generateImage()
   },[])
 
-  return <img src={imageUrl} alt={prompt} className="rounded shadow" />
+  return <img src={imageUrl} alt={prompt} className="border rounded-lg p-2" />
 
 }
 export { AiImage };
